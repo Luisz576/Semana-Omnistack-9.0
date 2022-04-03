@@ -6,7 +6,7 @@ const SpotSchema = new mongoose.Schema({
     price: Number,
     techs: [String],
     user: {
-        type: mongoose.Schema.Types.ObjectId, //id gerado quando se crea um usuario
+        type: mongoose.Schema.Types.ObjectId, //id gerado quando se cria um usuario
         ref: 'User'
     }
 }, {
